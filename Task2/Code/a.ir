@@ -1,0 +1,6 @@
+FUNCTION main :
+READ v1
+READ v3
+v16 := #0
+RETURN v16
+

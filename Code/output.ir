@@ -1,0 +1,51 @@
+FUNCTION func1 :
+PARAM v1
+t1 := #0
+v2 := t1
+t2 := #2
+v3 := t2
+t3 := #0
+v4 := t3
+LABEL label3 :
+t14 := v2
+t15 := v3
+IF t14 < t15 GOTO label4
+GOTO label5
+LABEL label4 :
+t16 := v1
+t18 := v2
+t18 := t18 * #4
+t16 := t16 + t18
+t16 := *t16
+t17 := v4
+IF t16 > t17 GOTO label6
+GOTO label7
+LABEL label6 :
+t19 := v1
+t20 := v2
+t20 := t20 * #4
+t19 := t19 + t20
+t19 := *t19
+v4 := t19
+LABEL label7 :
+t22 := v2
+t23 := #1
+t21 := t22 + t23
+v2 := t21
+GOTO label3
+LABEL label5 :
+t24 := v4
+RETURN t24
+FUNCTION main :
+t25 := #0
+v5 := t25
+DEC v6 16
+t27 := #1
+t26 := &v6
+t28 := #0
+t28 := t28 * #8
+t26 := t26 + t28
+t29 := v5
+t29 := t29 * #4
+t26 := t26 + t29
+*t26 := t27
